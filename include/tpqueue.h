@@ -29,7 +29,7 @@ public:
         }
         count++;
     }
-    const T& pop() {
+    T pop() {
         if (!count) throw std::string("Empty");
         T value = arr[0];
         count--;
