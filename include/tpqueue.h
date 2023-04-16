@@ -7,8 +7,9 @@ template<typename T, int size>
 class TPQueue {
     T* arr;
     int count;
-public:
-    TPQueue() : count(0), arr(new T[size]) {};
+    
+ public:
+    TPQueue() : count(0), arr(new T[size]);
     ~TPQueue() {
         if (count >= 0) {
             delete[] arr;
